@@ -1,0 +1,8 @@
+{
+  "address": "Terra",
+  "angle": 90.0,
+  "position_LaunchPad": {
+    "horizontalPosition": 250.0,
+    "height": 1200
+  }
+}

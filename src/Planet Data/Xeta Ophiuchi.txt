@@ -1,0 +1,58 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 3900000.0,
+    "gravity": 6.0,
+    "timewarpHeight": 100000.0,
+    "velocityArrowsHeight": 200.0,
+    "mapColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    }
+  },
+  "ATMOSPHERE_PHYSICS_DATA": {
+    "height": 100000.0,
+    "density": 1.0,
+    "curve": 15.0,
+    "parachuteMultiplier": 0.8,
+    "upperAtmosphere": 0.3,
+    "shockwaveIntensity": 0.5,
+    "minHeatingVelocityMultiplier": 0.35
+    },
+  "ATMOSPHERE_VISUALS_DATA": {
+    "GRADIENT": {
+      "positionZ": 40000,
+      "height": 90000.0,
+      "texture": "kelvin_atmo"
+    },
+    "CLOUDS": {
+      "texture": "None",
+      "startHeight": 0.0,
+      "width": 0.0,
+      "height": 0.0,
+      "alpha": 0.65,
+      "velocity": 0.0
+    },
+    "FOG": {
+      "keys": []
+    }
+  },
+  "ORBIT_DATA": {
+    "parent": "Black Hole Marvis 7LXX",
+    "semiMajorAxis": 13000000000.0,
+    "eccentricity": 0.0,
+    "argumentOfPeriapsis": 0.0,
+    "direction": 2,
+    "multiplierSOI": 0.8
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": []
+}

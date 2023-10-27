@@ -1,0 +1,126 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 35200.0,
+    "radiusDifficultyScale": {},
+    "gravity": 8.771,
+    "gravityDifficultyScale": {
+      "normal": 1.0,
+      "hard": 1.5,
+      "realistic": 1.25
+    },
+    "timewarpHeight": 125000.0,
+    "velocityArrowsHeight": "NaN",
+    "mapColor": {
+      "r": 0.9005,
+      "g": 0.2805147,
+      "b": 0.0305147,
+      "a": 1.0
+    }
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "Gliese 764 b",
+      "planetTextureCutout": -1.001,
+      "surfaceTexture_A": "Dark_Dust",
+      "surfaceTextureSize_A": {
+        "x": 20.0,
+        "y": 8.0
+      },
+      "surfaceTexture_B": "Hard_Rocks",
+      "surfaceTextureSize_B": {
+        "x": 40.0,
+        "y": 16.0
+      },
+      "terrainTexture_C": "Soft_Rocks",
+      "terrainTextureSize_C": {
+        "x": 280.0,
+        "y": 145.0
+      },
+      "surfaceLayerSize": 50.0,
+      "minFade": 0.0,
+      "maxFade": 1.0,
+      "shadowIntensity": 9.0,
+      "shadowHeight": 10.0
+    },
+    "terrainFormulaDifficulties": {
+      "normal": [
+        "OUTPUT = AddHeightMap(Moon_Normal, 543495.5290710, 250)",
+        "PLAINS = AddHeightMap(Moon_Plains, 543495.5290710, 1)",
+        "OUTPUT = AddHeightMap(Craters, 24704.3422305016, 180, null, PLAINS)",
+        "OUTPUT = AddHeightMap(Craters, 3396.84705669396, 22, null, PLAINS)",
+        "OUTPUT = AddHeightMap(Perlin, 1811.65176357011, 3)"
+      ],
+      "hard": [
+        "OUTPUT = AddHeightMap(Moon, 1086991.0581420, 500)",
+        "PLAINS = AddHeightMap(Moon_Plains, 1086991.0581420, 1)",
+        "OUTPUT = AddHeightMap(Craters, 24704.3422305016, 180, null, PLAINS)",
+        "OUTPUT = AddHeightMap(Craters, 3396.84705669396, 22, null, PLAINS)",
+        "OUTPUT = AddHeightMap(Perlin, 1811.65176357011, 3)"
+      ],
+      "realistic": [
+        "OUTPUT = AddHeightMap(Moon, 10869910.581420, 5000)",
+        "PLAINS = AddHeightMap(Moon_Plains, 10869910.581420, 1)",
+        "OUTPUT = AddHeightMap(Craters, 24704.3422305016, 180, null, PLAINS)",
+        "OUTPUT = AddHeightMap(Craters, 3396.84705669396, 22, null, PLAINS)",
+        "OUTPUT = AddHeightMap(Perlin, 1811.65176357011, 3)"
+      ]
+    },
+    "textureFormula": [
+      "OUTPUT = AddHeightMap(Perlin, 6793.69411338793, 1, Curve8)",
+      "OUTPUT = ApplyCurve(Curve8)",
+      "OUTPUT = ApplyCurve(Curve8)"
+    ],
+    "verticeSize": 2.0,
+    "collider": true,
+    "flatZones": []
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 10000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 0.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 15000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 1.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Ler",
+    "semiMajorAxis": 710500.0,
+    "smaDifficultyScale": {
+      "normal": 1.0,
+      "hard": 4.0,
+      "realistic": 34.32
+    },
+    "eccentricity": 0,
+    "argumentOfPeriapsis": 0.0,
+    "direction": -1,
+    "multiplierSOI": 0.55,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": false,
+    "Takeoff": false,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": []
+}

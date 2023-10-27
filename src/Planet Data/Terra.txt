@@ -1,0 +1,119 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 616000.0,
+    "gravity": 8.3,
+    "timewarpHeight": 35000.0,
+    "velocityArrowsHeight": 200.0,
+    "mapColor": {
+      "r": 0.0,
+      "g": 0.9,
+      "b": 0.15,
+      "a": 1.0
+    }
+  },
+  "ATMOSPHERE_PHYSICS_DATA": {
+    "height": 35000.0,
+    "density": 0.0005,
+    "curve": 10.0,
+    "parachuteMultiplier": 3,
+    "upperAtmosphere": 0.4,
+    "shockwaveIntensity": 0.5,
+    "minHeatingVelocityMultiplier": 0.35
+    },
+  "ATMOSPHERE_VISUALS_DATA": {
+    "GRADIENT": {
+      "positionZ": 3500,
+      "height": 45000.0,
+      "texture": "Atmo_Earth"
+    },
+    "CLOUDS": {
+      "texture": "Earth_Clouds",
+      "startHeight": 1000.0,
+      "width": 18000.0,
+      "height": 20000.0,
+      "alpha": 1.25,
+      "velocity": 30.0
+    },
+    "FOG": {
+      "keys": []
+    }
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "Terra",
+      "planetTextureCutout": 0.995,
+      "surfaceTexture_A": "Blured",
+      "surfaceTextureSize_A": {
+        "x": 20.0,
+        "y": 8.0
+      },
+      "surfaceTexture_B": "None",
+      "surfaceTextureSize_B": {
+        "x": -1.0,
+        "y": -1.0
+      },
+      "terrainTexture_C": "Hard_Rocks",
+      "terrainTextureSize_C": {
+        "x": 100.0,
+        "y": 30.0
+      },
+      "surfaceLayerSize": 40.0,
+      "minFade": 0.0,
+      "maxFade": 1.0,
+      "shadowIntensity": 6.0,
+      "shadowHeight": 15.0
+    },
+    "terrainFormula": [
+      "OUTPUT = AddHeightMap(Perlin,251327.41228718, 300)",
+      "OUTPUT = AddHeightMap(Perlin,3238.9158460802, 5)",
+      "OUTPUT = AddHeightMap(Perlin,174253.67251911, 1500)"
+    ],
+    "textureFormula": [],
+    "verticeSize": 1000.0,
+    "collider": true,
+    "flatZones": []
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 0.0,
+        "shadowIntensity": 1.35,
+        "starIntensity": 0.07,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.12,
+        "green": 1.08,
+        "blue": 1.0
+      },
+      {
+        "height": 25000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 0.15,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Friid",
+    "semiMajorAxis": 62550000.0,
+    "eccentricity": 0.0,
+    "argumentOfPeriapsis": 0.0,
+    "direction": -1,
+    "multiplierSOI": 2.6
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": []
+}
